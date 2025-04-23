@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Dawid Szaszowski</title>
+	  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.google.com/specimen/Didact+Gothic" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	  <h1>Dawid Szaszowski</h1>
+	  <img id="profile-img" src="images/profile_pic.jpg" alt="Profile Picture">
+
+	  <div class="links">
+		<a href="mailto:dawid.szaszowski3@gmail.com" target="_blank">
+		  <img src="images/mail.png" alt="E-mail" style="filter: invert(100%);" />
+		</a>  
+		<a href="https://github.com/Bambiq" target="_blank">
+		  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);" />
+		</a>
+		<a href="https://www.linkedin.com/in/dawid-szaszowski-187656240/" target="_blank">
+		  <img src="images/linkedin.png" alt="Linkedin" style="filter: invert(100%);" />
+		</a>
+	  </div>
+
+	  <hr style="width: 550px;">
+	<!-- About me -->
+	  <div class="description">
+		<p>Hello! <!-- Dodaj któtkie przywitanie --></p>
+	  </div>
+
+	  <hr style="width: 550px;">
+
+	  <div class="buttons">
+		<button onclick="toggleList(1)">Projects</button>
+		<!--<button onclick="toggleList(2)">Career</button>-->
+		<button onclick="toggleList(3)">Skills</button>
+		<!--<button onclick="toggleList(4)">Research</button>-->
+	  </div>
+
+	<!-- List 1: Projects -->
+	  <div id="list1" class="list">
+		<hr style="width: 550px;">
+		<div class="description">
+		  <p>Here are the projects</p>
+		</div>
+
+		<img src="images/Dungeon.png" alt="Show description" onclick="toggleDescription('description1')" class="project-img">
+		
+		<div id="description1" class="description section-description" style="display: none; margin-top: 20px;">
+		  <hr>
+		  <h2>Top Dungeon</h2>
+		  
+		  <div class="links"> 
+			<a href="https://github.com/Bambiq/TopDungeon" target="_blank">
+			  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);" />
+			</a>
+		  </div>
+	  
+		  <div>
+		   <iframe 
+			width="560" 
+			height="315" 
+			src="https://www.youtube.com/embed/_ERMq0tH4Yo" 
+			title="YouTube video player" 
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen>
+		  </iframe>
+		  </div>
+		  
+		  <p>Placeholder text<!-- dodaj opisy --></p>
+		</div>
+	  </div>
+
+	<!-- List 2: Career
+	  <div id="list2" class="list">
+		<hr>
+		<div class="description">
+		  <p>Here is the career section</p>
+		</div>
+
+		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description2')" class="project-img">
+		
+		<div id="description2" class="description section-description" style="display: none; margin-top: 20px;">
+		  <hr>
+		  <h2>Section Description</h2>
+		  <p>Placeholder text</p>
+		</div>
+	  </div>
+						-->
+	<!-- List 3: Skills -->
+	  <div id="list3" class="list">
+		<hr>
+		<div class="description">
+		  <p>Here are the skills</p>
+		</div>
+
+		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description3')" class="project-img">
+		
+		<div id="description3" class="description section-description" style="display: none; margin-top: 20px;">
+		  <hr>
+		  <h2>Section Description</h2>
+		  <p>Placeholder text<!-- dodaj opisy --></p>
+		</div>
+	  </div>
+
+	<!-- List 4: Research 
+	  <div id="list4" class="list">
+		<hr>
+		<div class="description">
+		  <p>Here is something</p>
+		</div>
+
+		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description4')" class="project-img">
+		
+		<div id="description4" class="description section-description" style="display: none; margin-top: 20px;">
+		  <hr>
+		  <h2>Section Description</h2>
+		  <p>Placeholder text</p>
+		</div>
+	  </div>
+						-->
+	  <script src="script.js"></script>
+	</body>
+</html>

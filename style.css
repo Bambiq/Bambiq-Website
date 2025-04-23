@@ -1,0 +1,151 @@
+	body {
+	  background: radial-gradient(circle, #182754, #000000);
+	  background-attachment: fixed;
+	  font-family: 'VT323', cursive;
+	  text-align: center;
+	  margin: 1px;
+	  background-color: #182754;
+	  color: #ffffff;
+	  font-size: 30px;
+	  line-height: 1.5;
+	  letter-spacing: 0.5px;
+	}
+
+	.description {
+	  font-family: 'Didact Gothic', sans-serif;
+	  max-width: 50%;
+	  margin: 10px auto;
+	  font-size: 20px;
+	  color: #ffffff;
+	  line-height: 1.0;
+	  text-align: center;
+	  font-weight: 550;
+	}
+
+	h1 {
+	  font-family: 'Press Start 2P', cursive;
+	  font-size: 36px;
+	  color: #ffffff;
+	  padding: 15px 0;
+	  text-align: center;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 0;
+	  animation: typing 2s steps(30) forwards;
+	  margin: 0 auto;
+	  border-right: none;
+	}
+
+	h2 {
+	  font-family: "Jacquard 12", system-ui;
+	  font-weight: 400;
+	  font-size: 80px;
+	  font-style: normal;
+	}
+
+	@keyframes typing {
+	  from { width: 0; }
+	  to { width: 16ch; }
+	}
+
+	@keyframes blink {
+	  50% { border-color: transparent; }
+	}
+
+	p {
+	  color: #ffffff;
+	  text-shadow: 0 0 3px #ffffff;
+	}
+
+	hr {
+	  border: none;
+	  height: 1px;
+	  width: 950px;
+	  background-color: #ffffff;
+	  margin: 15px auto;
+	}
+
+	img {
+	  width: 230px;
+	  height: auto;
+	  border-radius: 50%;
+	  margin: 6px auto;
+	  cursor: pointer;
+	  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	img:hover {
+	  transform: scale(1.2);
+	  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+	}
+
+	.project-img {
+	  width: 105px;
+	  height: 105px;
+	  border: 1px solid white;
+	  border-radius: 50%; /* Ensure the image is circular */
+	  cursor: pointer;
+	  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+	  margin: 6px auto; /* Center the image */
+	}
+
+	.project-img:hover {
+	  transform: none; /* Increase the image size on hover */
+	  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Subtle shadow */
+	}
+
+	.project-img:focus {
+	  outline: none; /* Remove the border on focus */
+	}
+
+	#profile-img {
+	  transition: none;
+	  transform: none;
+	  cursor: default;
+	  box-shadow: none;
+	}
+
+	.links {
+	  display: flex;
+	  justify-content: center;
+	  gap: 15px;
+	  margin: 0px;
+	}
+
+	.links img {
+	  width: 30px;
+	  height: 30px;
+	  border-radius: 8px;
+	  transition: transform 0.2s;
+	}
+
+	.list {
+	  display: none;
+	  margin-top: 10px;
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	button {
+	  width: 160px;
+	  height: 50px;
+	  background-color: transparent;
+	  color: #ffffff;
+	  border: 0.5px #ffffff;
+	  border-style: solid;
+	  padding: 10px 30px;
+	  font-size: 25px;
+	  font-family: 'VT323', sans-serif;
+	  margin: 25px;
+	  cursor: pointer;
+	  transition: all 0.2s ease-in-out;
+	  text-align: center;
+	  box-sizing: border-box;
+	}
+
+	button:hover {
+	  background-color: rgba(90, 255, 255, 0.1);
+	  color: #ffffff;
+	  transform: scale(1.05);
+	  border-color: #ffffff;
+	}
