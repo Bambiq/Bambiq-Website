@@ -3,7 +3,6 @@
 	  background-attachment: fixed;
 	  font-family: 'VT323', cursive;
 	  text-align: center;
-	  margin: 1px;
 	  background-color: #182754;
 	  color: #ffffff;
 	  font-size: 30px;
@@ -11,15 +10,16 @@
 	  letter-spacing: 0.5px;
 	}
 
-	.description {
+	.description p{
 	  font-family: "Didact Gothic", sans-serif;
 	  font-weight: 620;
 	  font-style: normal;
 	  max-width: 50%;
-	  margin: 10px auto;
+	  margin: 30px auto;
 	  font-size: 20px;
 	  color: #ffffff;
-	  line-height: 1.0;
+	  line-height: 30.0px;
+	  letter-spacing: 1.5px;
 	  text-align: center;
 	}
 
@@ -39,9 +39,10 @@
 
 	h2 {
 	  font-family: "Jacquard 12", system-ui;
-	  font-weight: 400;
+	  font-weight: 400px;
 	  font-size: 80px;
 	  font-style: normal;
+	  margin-top: -10px;
 	}
 
 	@keyframes typing {
@@ -56,8 +57,9 @@
 	p {
 	  color: #ffffff;
 	  text-shadow: 0 0 3px #ffffff;
+	  margin-bottom: 40px;
 	}
-
+	
 	hr {
 	  border: none;
 	  height: 1px;
@@ -74,7 +76,7 @@
 	  cursor: pointer;
 	  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 	}
-
+	
 	img:hover {
 	  transform: scale(1.2);
 	  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
@@ -118,6 +120,14 @@
 	  height: 30px;
 	  border-radius: 8px;
 	  transition: transform 0.2s;
+	}
+	.desc-links img {
+	  width: 50px;
+	  height: 50px;
+	  margin: 5px;
+	  border-radius: 8px;
+	  margin-bottom: 30px;
+	  margin-top: -80px;
 	}
 
 	.list {
