@@ -1,45 +1,50 @@
-// Store visibility of description sections
-const descriptionVisibility = {};
-let currentVisibleList = null;
+	const descriptionVisibility = {};
+	let currentVisibleList = null;
 
-// Toggle list and reset description sections
-function toggleList(listNumber) {
-  const allLists = document.querySelectorAll('.list');
+	function toggleList(listNumber) {
+	  const allLists = document.querySelectorAll('.list');
 
-  allLists.forEach((list, index) => {
-    const currentListNumber = index + 1;
-    const isSelected = (currentListNumber === listNumber);
+	  // Hide all descriptions in all lists
+	  document.querySelectorAll('.description-section').forEach(description => {
+		description.style.display = 'none';
+		const id = description.id;
+		if (id) descriptionVisibility[id] = false;
+	  });
 
-    if (isSelected && currentVisibleList === listNumber) {
-      // If the same button is clicked again, hide the list
-      list.style.display = 'none';
-      list.querySelectorAll('.description-section').forEach(description => {
-        description.style.display = 'none';
-        const id = description.id;
-        if (id) descriptionVisibility[id] = false;
-      });
-      currentVisibleList = null;
-    } else if (isSelected) {
-      // Show selected list
-      list.style.display = 'block';
-      currentVisibleList = listNumber;
-    } else {
-      // Hide all other lists and their descriptions
-      list.style.display = 'none';
-      list.querySelectorAll('.description-section').forEach(description => {
-        description.style.display = 'none';
-        const id = description.id;
-        if (id) descriptionVisibility[id] = false;
-      });
-    }
-  });
-}
+	  allLists.forEach((list, index) => {
+		const currentListNumber = index + 1;
+		const isSelected = (currentListNumber === listNumber);
 
-// Toggle description inside list
-function toggleDescription(id) {
-  const description = document.getElementById(id);
-  const show = !descriptionVisibility[id];
+		if (isSelected) {
+		  const isAlreadyVisible = list.style.display === 'block';
 
-  description.style.display = show ? 'block' : 'none';
-  descriptionVisibility[id] = show;
-}
+		  // Toggle visibility
+		  list.style.display = isAlreadyVisible ? 'none' : 'block';
+		  currentVisibleList = isAlreadyVisible ? null : listNumber;
+		} else {
+		  list.style.display = 'none';
+		}
+	  });
+	}
+
+	function toggleDescription(id) {
+	  const description = document.getElementById(id);
+
+	  if (!description) return;
+
+	  const show = !descriptionVisibility[id];
+
+	  // Hide all descriptions in the current visible list
+	  if (currentVisibleList !== null) {
+		const currentList = document.querySelectorAll('.list')[currentVisibleList - 1];
+		currentList.querySelectorAll('.description-section').forEach(desc => {
+		  desc.style.display = 'none';
+		  const descId = desc.id;
+		  if (descId) descriptionVisibility[descId] = false;
+		});
+	  }
+
+	  // Show only one clicked
+	  description.style.display = show ? 'block' : 'none';
+	  descriptionVisibility[id] = show;
+	}

@@ -3,7 +3,6 @@
 	  background-attachment: fixed;
 	  font-family: 'VT323', cursive;
 	  text-align: center;
-	  background-color: #182754;
 	  color: #ffffff;
 	  font-size: 30px;
 	  line-height: 1.5;
@@ -12,7 +11,7 @@
 
 	.description p{
 	  font-family: "Didact Gothic", sans-serif;
-	  font-weight: 620;
+	  font-weight: 600;
 	  font-style: normal;
 	  max-width: 50%;
 	  margin: 30px auto;
@@ -44,7 +43,48 @@
 	  font-style: normal;
 	  margin-top: -10px;
 	}
+	
+	h3 {
+	  font-family: "Press Start 2P", cursive;
+	  font-weight: 300px;
+	  font-size: 40px;
+	  font-style: normal;
+	  margin-bottom: 90px;
+	}
+	
+	.skills {
+	  background-color: transparent;
+	  padding: 20px;
+	  border-radius: 8px;
+	  width: 100%;
+	  max-width: 600px;
+	  margin: 0 auto;
+	}
 
+	.skills h2 {
+	  font-family: "Press Start 2P", cursive;
+	  font-size: 24px;
+	  margin-bottom: 10px;
+	}
+
+	.skills ul {
+	  list-style-type: none;
+	  padding: 0;
+	  margin: auto;
+	}
+
+	.skills li {
+	  font-family: "Didact Gothic", sans-serif;
+	  font-size: 18px;
+	  margin: 8px 0;
+	  background-color: #182754;
+	  padding: 8px;
+	  border-radius: 4px;
+	  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	  text-shadow: 0 0 3px #ffffff;
+	  font-weight: 500;
+	}
+	
 	@keyframes typing {
 	  from { width: 0; }
 	  to { width: 16ch; }
@@ -67,7 +107,17 @@
 	  background-color: #ffffff;
 	  margin: 15px auto;
 	}
+	
+	.row {
+	  display: flex;
+	  gap: 20px;
+	}
 
+	.column {
+	  flex: 1;
+	  padding: 10px;
+	}
+	
 	img {
 	  width: 230px;
 	  height: auto;
@@ -86,19 +136,19 @@
 	  width: 105px;
 	  height: 105px;
 	  border: 1px solid white;
-	  border-radius: 50%; /* Ensure the image is circular */
+	  border-radius: 50%;
 	  cursor: pointer;
 	  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
-	  margin: 6px auto; /* Center the image */
+	  margin: 6px auto;
 	}
 
 	.project-img:hover {
-	  transform: none; /* Increase the image size on hover */
-	  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Subtle shadow */
+	  transform: none;
+	  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 	}
 
 	.project-img:focus {
-	  outline: none; /* Remove the border on focus */
+	  outline: none;
 	}
 
 	#profile-img {
@@ -129,7 +179,11 @@
 	  margin-bottom: 30px;
 	  margin-top: -80px;
 	}
-
+	
+	a {
+	  display: inline-block;
+	}
+	
 	.list {
 	  display: none;
 	  margin-top: 10px;

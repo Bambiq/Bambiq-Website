@@ -8,9 +8,7 @@
 	  <link rel="icon" href="images/icon.png" type="image/png">
 	  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 	  <link rel="stylesheet" href="style.css">
 	</head>
 
@@ -20,129 +18,173 @@
 
 	  <div class="links">
 		<a href="mailto:dawid.szaszowski3@gmail.com" target="_blank">
-		  <img src="images/mail.png" alt="E-mail" style="filter: invert(100%);" />
-		</a>  
+		  <img src="images/mail.png" alt="E-mail icon" style="filter: invert(100%);" />
+		</a>
 		<a href="https://github.com/Bambiq" target="_blank">
-		  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);" />
+		  <img src="images/github.png" alt="GitHub profile icon" style="filter: invert(100%);" />
 		</a>
 		<a href="https://www.linkedin.com/in/dawid-szaszowski-187656240/" target="_blank">
-		  <img src="images/linkedin.png" alt="Linkedin" style="filter: invert(100%);" />
+		  <img src="images/linkedin.png" alt="LinkedIn profile icon" style="filter: invert(100%);" />
 		</a>
 	  </div>
 
 	  <hr>
 	<!-- About me -->
 	  <div class="description">
-		<p>Welcome, traveler! My name is Dawid, i'm a passionate gamer and soon-to-be game developer who enjoys journey in Game Dev. Take a look around!</p>
+		<p>Welcome, traveler! My name is Dawid. I'm a passionate gamer and aspiring game developer, enjoying the journey in Game Dev. Take a look around!</p>
 	  </div>
 
 	  <hr>
 
 	  <div class="buttons">
 		<button onclick="toggleList(1)">Projects</button>
-		<!--<button onclick="toggleList(2)">Career</button>-->
-		<button onclick="toggleList(3)">Skills</button>
+		<button onclick="toggleList(2)">Skills</button>
+		<!--<button onclick="toggleList(3)">Game Achievements</button>-->
 		<!--<button onclick="toggleList(4)">Research</button>-->
 	  </div>
 
 	<!-- List 1: Projects -->
 	  <div id="list1" class="list">
-		<hr style="width: 550px;">
+		<hr style="width: 950px;">
 		<div class="description">
-		  <p>Take a look by clicking buttons below!</p>
+		  <p>Take a look at my projects with buttons below!</p>
 		</div>
 
 		<img src="images/topdungeon-icon.png" alt="TopDungeon" onclick="toggleDescription('description1')" class="project-img">
+		<img src="images/WIP.png" alt="TopDungeon" onclick="toggleDescription('description2')" class="project-img">
 		
-		<div id="description1" class="description section-description" style="display: none;">
+		<div id="description1" class="description description-section" style="display: none;">
 		  <hr>
 		 
 		  <h2>Top Dungeon</h2>
-		<div class="desc-links"> 
-			<a href="https://github.com/Bambiq/TopDungeon" target="_blank">
-			  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
-			</a>
-			<a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
-			  <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
-			</a>
-		</div>
-		<div style="line-height: 1.5; letter-spacing: 1.0px; margin-top: -40px">
-		    <p>Top Dungeon is a dungeon crawler game developed as a group project by me and two other students during our second year of Computer Science degree.
-			  The game was created using Unity, C# and Visual Studio as the primary IDE, with gameplay inspired by classic dungeon crawler titles.
-			</p>
-			<p>
-			  The project was developed using pre-made assets from itch.io, and coded in C#.
-			  </p>
-			  <p>
-			  My contributions: Player movement, Enemy, UI, Dungeon Desing, QA, Combat system.
-			</p>	 
-		</div>			
-		<div>
-		  
-		   <iframe
-			width="560" 
-			height="315" 
-			src="https://www.youtube.com/embed/_ERMq0tH4Yo" 
-			title="YouTube video player" 
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen>
-		  </iframe>
-		  
-		</div>
-		  
-
-		</div>
-	  </div>
-
-	<!-- List 2: Career
-	  <div id="list2" class="list">
-		<hr>
-		<div class="description">
-		  <p>Here is the career section</p>
+			<div class="desc-links"> 
+				<a href="https://github.com/Bambiq/TopDungeon" target="_blank">
+				  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
+				</a>
+				<a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
+				  <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
+				</a>
+			</div>
+			
+			<div style="line-height: 1.5; letter-spacing: 1.0px; margin-top: -40px">
+				<p>
+					Top Dungeon is a dungeon crawler developed as a group project during my second year of Computer Science. 
+					Built with Unity, C# and Visual Studio as the primary IDE, with gameplay inspired by classic dungeon crawler titles.
+					The project was developed using pre-made assets from itch.io.
+				</p>
+				<p>
+				  My contributions included player movement, enemy behavior, UI implementation, dungeon design, QA, and the combat system.
+				</p>				
+			</div>		
+			<div>
+			   <iframe
+				width="560" 
+				height="315" 
+				src="https://www.youtube.com/embed/_ERMq0tH4Yo" 
+				title="YouTube video player" 
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				allowfullscreen>
+			  </iframe>
+			</div>
 		</div>
 
-		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description2')" class="project-img">
 		
-		<div id="description2" class="description section-description" style="display: none; margin-top: 20px;">
+		<div id="description2" class="description description-section" style="display: none;">
 		  <hr>
-		  <h2>Section Description</h2>
-		  <p>Placeholder text</p>
+		 
+		  <h3>Arcane [Working title]</h3>
+			<div class="desc-links"> 
+				<a href="https://github.com/Bambiq/Arcane" target="_blank">
+				  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
+				</a><!--
+				<a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
+				  <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
+				</a> -->
+				<a href="https://github.com/Bambiq/Arcane/blob/main/GDD/%F0%9F%8E%AFArcane.pdf" target="_blank">
+				  <img src="images/docs.png" alt="Documentation" style="filter: invert(100%);">
+				</a>
+			</div>
+			
+			<div style="line-height: 1.5; letter-spacing: 1.0px; margin-top: -40px">
+				<p>
+					I am currently working on a top-down arena shooter roguelite.
+				</p>
+				<p>
+					Feel free to explore the Git repo and documentation.
+				</p>				
+			</div>			
 		</div>
 	  </div>
-						-->
-	<!-- List 3: Skills -->
+
+	<!-- List 2: Skills -->
+	  <div id="list2" class="list">
+		<hr style="width: 950px;">
+		<div class="description">
+		  <p>Here’s a list of my skills below!</p>
+		</div>
+
+		<div id="description3" class="description">
+		  <hr>
+		  <div class="skills">
+			<div class="row">
+			  <div class="column">
+				<h2>Programming Languages</h2>
+				  <ul>
+					<li>C#</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				  </ul>
+			  </div>
+			  
+			  <div class="column">
+				<h2>Engines & Tools</h2>
+				  <ul>
+					<li>Unity</li>
+					<li>Visual Studio</li>
+					<li>Git</li>
+					<li>Google Sheets</li>
+					<li>Jira</li>
+				  </ul>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="column">
+				<h2 style= "margin-bottom: 45px">Soft Skills</h2>
+				  <ul>
+					<li>Self-management skills</li>
+					<li>Ability to work in a team</li>
+					<li>Very good communication skills</li>
+					<li>Problem-solving and analytical thinking</li>
+				  </ul>
+			  </div>
+			  
+			  <div class="column">
+				<h2>Spoken Languages</h2>
+				  <ul>
+					<li>Polish</li>
+					<li>English</li>
+				  </ul>
+			  </div> 
+			</div>
+			</div>
+		  </div>
+						
+	<!-- List 3:  --><!--
 	  <div id="list3" class="list">
-		<hr>
+		<hr style="width: 950px;">
 		<div class="description">
 		  <p>Here are the skills</p>
 		</div>
 
-		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description3')" class="project-img">
-		
-		<div id="description3" class="description section-description" style="display: none; margin-top: 20px;">
-		  <hr>
-		  <h2>Section Description</h2>
-		  <p>Placeholder text<!-- dodaj opisy --></p>
-		</div>
-	  </div>
-
-	<!-- List 4: Research 
-	  <div id="list4" class="list">
-		<hr>
-		<div class="description">
-		  <p>Here is something</p>
-		</div>
-
 		<img src="images/WIP.png" alt="Show description" onclick="toggleDescription('description4')" class="project-img">
 		
-		<div id="description4" class="description section-description" style="display: none; margin-top: 20px;">
+		<div id="description4" class="description section-description" style="display: none;">
 		  <hr>
 		  <h2>Section Description</h2>
-		  <p>Placeholder text</p>
-		</div>
-	  </div>
-						-->
-	  <script src="script.js"></script>
+		  <div class="skills">
+	-->
+		<script src="script.js"></script>
 	</body>
 </html>
