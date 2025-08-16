@@ -1,177 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawid Szaszowski</title>
+  <link rel="icon" href="images/icon.png" type="image/png">
 
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Dawid Szaszowski</title>
-	  <link rel="icon" href="images/icon.png" type="image/png">
-	  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-	  <link rel="stylesheet" href="style.css">
-	</head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jacquard+12&display=swap" rel="stylesheet">
 
-	<body>
-	  <h1>Dawid Szaszowski</h1>
-	  <img id="profile-img" src="images/profile_pic.jpg" alt="Profile Picture">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	  <div class="links">
-		<a href="mailto:dawid.szaszowski3@gmail.com" target="_blank">
-		  <img src="images/mail.png" alt="E-mail icon" style="filter: invert(100%);" />
-		</a>
-		<a href="https://github.com/Bambiq" target="_blank">
-		  <img src="images/github.png" alt="GitHub profile icon" style="filter: invert(100%);" />
-		</a>
-		<a href="https://www.linkedin.com/in/dawid-szaszowski-187656240/" target="_blank">
-		  <img src="images/linkedin.png" alt="LinkedIn profile icon" style="filter: invert(100%);" />
-		</a>
-	  </div>
+  <!-- HEADER -->
+  <header>
+    <h1>Dawid Szaszowski</h1>
+    <img id="profile-img" src="images/profile_pic.jpg" alt="Profile Picture">
 
-	  <hr>
-	<!-- About me -->
-	  <div class="description">
-		<p>Welcome, traveler! My name is Dawid. I'm a passionate gamer and aspiring game developer, enjoying the journey in Game Dev. Take a look around!</p>
-	  </div>
+    <div class="links">
+      <a href="mailto:dawid.szaszowski3@gmail.com" target="_blank">
+        <img src="images/mail.png" alt="E-mail icon" style="filter: invert(100%);" />
+      </a>
+      <a href="https://github.com/Bambiq" target="_blank">
+        <img src="images/github.png" alt="GitHub profile icon" style="filter: invert(100%);" />
+      </a>
+      <a href="https://www.linkedin.com/in/dawid-szaszowski-187656240/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn profile icon" style="filter: invert(100%);" />
+      </a>
+    </div>
+  </header>
 
-	  <hr>
+  <hr>
 
-	  <div class="buttons">
-		<button onclick="toggleList(1)">Projects</button>
-		<button onclick="toggleList(2)">Skills</button>
-		<!--<button onclick="toggleList(3)">Gamer Stats</button>-->
-		<!--<button onclick="toggleList(4)">Research</button>-->
-	  </div>
+  <!-- ABOUT -->
+  <section class="description">
+    <p>Welcome, traveler! My name is Dawid. I'm a passionate gamer and aspiring game developer, enjoying the journey in Game Dev. Take a look around!</p>
+  </section>
 
-	<!-- List 1: Projects -->
-	  <div id="list1" class="list">
-		<hr style="width: 950px;">
-		<div class="description">
-		  <p>Take a look at my projects with buttons below!</p>
-		</div>
+  <hr>
 
-		<img src="images/topdungeon-icon.png" alt="TopDungeon" onclick="toggleDescription('description1')" class="project-img">
-		<img src="images/WIP.png" alt="TopDungeon" onclick="toggleDescription('description2')" class="project-img">
-		
-		<div id="description1" class="description description-section" style="display: none;">
-		  <hr>
-		 
-		  <h2>Top Dungeon</h2>
-			<div class="desc-links"> 
-				<a href="https://github.com/Bambiq/TopDungeon" target="_blank">
-				  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
-				</a>
-				<a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
-				  <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
-				</a>
-			</div>
-			
-			<div style="line-height: 1.5; letter-spacing: 1.0px; margin-top: -40px">
-				<p>
-					Top Dungeon is a dungeon crawler developed as a group project during my second year of Computer Science. 
-					Built with Unity, C# and Visual Studio as the primary IDE, with gameplay inspired by classic dungeon crawler titles.
-					The project was developed using pre-made assets from itch.io.
-				</p>
-				<p>
-				  My contributions included player movement, enemy behavior, UI implementation, dungeon design, QA, and the combat system.
-				</p>				
-			</div>		
-			<div>
-			   <iframe
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/_ERMq0tH4Yo" 
-				title="YouTube video player" 
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-				allowfullscreen>
-			  </iframe>
-			</div>
-		</div>
+  <!-- NAV BUTTONS -->
+  <nav class="buttons">
+    <button onclick="toggleList(1)">Projects</button>
+    <button onclick="toggleList(2)">Skills</button>
+    <!-- <button onclick="toggleList(3)">Gamer Stats</button> -->
+    <!-- <button onclick="toggleList(4)">Research</button> -->
+  </nav>
 
-		
-		<div id="description2" class="description description-section" style="display: none;">
-		  <hr>
-		 
-		  <h3>Arcane [Working title]</h3>
-			<div class="desc-links"> 
-				<a href="https://github.com/Bambiq/Arcane" target="_blank">
-				  <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
-				</a><!--
-				<a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
-				  <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
-				</a> -->
-				<a href="https://github.com/Bambiq/Arcane/blob/main/GDD/%F0%9F%8E%AFArcane.pdf" target="_blank">
-				  <img src="images/docs.png" alt="Documentation" style="filter: invert(100%);">
-				</a>
-			</div>
-			
-			<div style="line-height: 1.5; letter-spacing: 1.0px; margin-top: -40px">
-				<p>
-					I am currently working on a top-down arena shooter roguelite.
-				</p>
-				<p>
-					Feel free to explore the Git repo and documentation.
-				</p>				
-			</div>			
-		</div>
-		</div>
+  <!-- PROJECTS LIST -->
+  <section id="list1" class="list">
+    <hr>
+    <div class="description">
+      <p>Take a look at my projects with buttons below!</p>
+    </div>
 
-	<!-- List 2: Skills -->
-	  <div id="list2" class="list">
-		<hr style="width: 950px;">
-		<div class="description">
-		  <p>Here’s a list of my skills below!</p>
-		</div>
+    <div class="project-thumbs">
+      <img src="images/topdungeon-icon.png" alt="TopDungeon" onclick="toggleDescription('project1')" class="project-img">
+      <img src="images/WIP.png" alt="Arcane WIP" onclick="toggleDescription('project2')" class="project-img">
+      <img src="images/GTT_icon.png" alt="GameTestTool" onclick="toggleDescription('project3')" class="project-img">
+    </div>
 
-		<div id="description3" class="description">
-		  <hr>
-		  <div class="skills">
-			<div class="row">
-			  <div class="column">
-				<h2>Programming Languages</h2>
-				  <ul>
-					<li>C#</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-				  </ul>
-			  </div>
-			  
-			  <div class="column">
-				<h2>Engines & Tools</h2>
-				  <ul>
-					<li>Unity</li>
-					<li>Visual Studio</li>
-					<li>Git</li>
-					<li>Google Sheets</li>
-					<li>Jira</li>
-				  </ul>
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="column">
-				<h2 style= "margin-bottom: 45px">Soft Skills</h2>
-				  <ul>
-					<li>Self-management skills</li>
-					<li>Ability to work in a team</li>
-					<li>Very good communication skills</li>
-					<li>Problem-solving and analytical thinking</li>
-				  </ul>
-			  </div>
-			  
-			  <div class="column">
-				<h2>Spoken Languages</h2>
-				  <ul>
-					<li>Polish</li>
-					<li>English</li>
-				  </ul>
-			  </div> 
-			</div>
-			</div>
-		  </div>
-		</div>
-		
-		<script src="script.js"></script>
-	</body>
+    <!-- Project 1 -->
+    <article id="project1" class="description description-section" style="display: none;">
+      <hr>
+      <h2>Top Dungeon</h2>
+      <div class="desc-links">
+        <a href="https://github.com/Bambiq/TopDungeon" target="_blank">
+          <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
+        </a>
+        <a href="https://bambiq.github.io/Bambiq-Website/GameBuild/index.html" target="_blank">
+          <img src="images/gamepad.png" alt="Game Link" style="filter: invert(100%);">
+        </a>
+      </div>
+
+      <div class="project-text">
+        <p>
+          Top Dungeon is a dungeon crawler developed as a group project during my second year of Computer Science. 
+          Built with Unity, C# and Visual Studio as the primary IDE, with gameplay inspired by classic dungeon crawler titles.
+          The project was developed using pre-made assets from itch.io.
+        </p>
+        <p>
+          My contributions included player movement, enemy behavior, UI implementation, dungeon design, QA, and the combat system.
+        </p>
+      </div>
+
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/_ERMq0tH4Yo" 
+        title="Top Dungeon Gameplay Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </article>
+
+    <!-- Project 2 -->
+    <article id="project2" class="description description-section" style="display: none;">
+      <hr>
+      <h3>Arcane [Working title]</h3>
+      <div class="desc-links">
+        <a href="https://github.com/Bambiq/Arcane" target="_blank">
+          <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
+        </a>
+        <a href="https://github.com/Bambiq/Arcane/blob/main/GDD/%F0%9F%8E%AFArcane.pdf" target="_blank">
+          <img src="images/docs.png" alt="Documentation" style="filter: invert(100%);">
+        </a>
+      </div>
+
+      <div class="project-text">
+        <p>I am currently working on a top-down arena shooter roguelite.</p>
+        <p>Feel free to explore the Git repo and documentation.</p>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article id="project3" class="description description-section" style="display: none;">
+      <hr>
+      <h3>GameTestTool</h3>
+      <div class="desc-links">
+        <a href="https://github.com/Bambiq/GameTestTool" target="_blank">
+          <img src="images/github.png" alt="GitHub" style="filter: invert(100%);">
+        </a>
+      </div>
+
+      <div class="project-text">
+        <p>
+          This project helps track, view, and manage logs from game testing sessions. 
+          It's built with a FastAPI + SQLite backend and a React + Tailwind CSS frontend.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="row">
+          <div class="column">
+            <strong>⚙️ Features</strong>
+            <ul>
+              <li>Add new test logs</li>
+              <li>View and delete existing logs</li>
+              <li>Filter logs by result</li>
+              <li>Sort logs by date</li>
+            </ul>
+
+            <strong>🛠️ Tech Stack</strong>
+            <ul>
+              <li>Backend: FastAPI, SQLite, SQLAlchemy</li>
+              <li>Frontend: React, Vite, Tailwind CSS</li>
+              <li>API: REST (Fetch)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshots">
+        <p><strong>Screenshots</strong></p>
+        <img src="images/GTT_0.png" alt="GameTestTool Screenshot 1" id="gtt-img" class="block">
+        <img src="images/GTT_1.png" alt="GameTestTool Screenshot 2" id="gtt-img" class="block">
+      </div>
+    </article>
+  </section>
+
+  <!-- SKILLS LIST -->
+  <section id="list2" class="list">
+    <hr>
+    <div class="description">
+      <p>Here’s a list of my skills below!</p>
+    </div>
+
+    <div class="skills">
+      <div class="row">
+        <div class="column">
+          <h2>Programming Languages</h2>
+          <ul>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Engines & Tools</h2>
+          <ul>
+            <li>Unity</li>
+            <li>Visual Studio</li>
+            <li>Git</li>
+            <li>Google Sheets</li>
+            <li>Jira</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Self-management skills</li>
+            <li>Attention to detail</li>
+            <li>Very good communication skills</li>
+            <li>Problem-solving and analytical thinking</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Spoken Languages</h2>
+          <ul>
+            <li>Polish</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
